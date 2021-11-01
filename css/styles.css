@@ -23,8 +23,8 @@ p {
   font-weight: 400;
   color: #C08497;
 }
-background {
-
+body {
+  color: #ffffff;
 }
 a:link {
   text-decoration: none;
