@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body {
+  background-color: #B4C5E6;
+}
+.main-button {
+  margin: 5px 5px 5px 25px;
+  font-family: 'Quicksand', sans-serif;  
+  font-weight: bold;
+  color: #647AA3;
+  background-color: #F6D2DC;
+  border-radius: 20px;
+  border-style: none;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+}
+.main-button:hover {
+  color: #F6D2DC;
+  background-color: #647AA3;
+}
+button {
+  margin: 10px 5px 5px 25px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #647AA3;
+  background-color: #F6D2DC;
+  border-radius: 20px;
+  border-style: none;
+  width: 120px;
+  height: 30px;
+}
+button:hover {
+  color: #F6D2DC;
+  background-color: #647AA3;
+}
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px 5px 5px 25px;
+  color: #647AA3;
+}
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px 5px 5px 25px;
+  color: #647AA3;
+}
+p {
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px 5px 5px 25px;
+  color: #647AA3;
+  font-weight: bold;
+}
+.total-time {
+  font-family: 'Quicksand', sans-serif;
+  margin: 10px 5px 5px 25px;
+  color: #647AA3;
+  font-weight: bold;
+  font-size: 25px;
+}
+ul {
+  padding: 5px;
+  list-style-type: none;
+}
+input {
+  margin: 10px 5px 5px 25px;
+  font-family: 'Quicksand', sans-serif;
+  width: 60px;
+  height: 25px;
+  background-color: #F6D2DC;
+  color: #647AA3;
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.check-box {
+  width: 17px;
+  padding: 5px;
+}
