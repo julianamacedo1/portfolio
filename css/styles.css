@@ -115,6 +115,7 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
   }
   .numbertext {
     text-align: center;
