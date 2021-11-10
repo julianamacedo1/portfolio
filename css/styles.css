@@ -42,7 +42,8 @@ i:hover {
 }
 /*linkedin link*/
 .linkedin-link {
-  
+  text-decoration: none;
+  color: #C08497;
 }
 .wd-work {
   text-decoration: none;
