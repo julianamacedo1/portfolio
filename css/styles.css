@@ -48,6 +48,10 @@ i:hover {
   text-decoration: none;
   color: #C08497;
 }
+.linkedin-link:hover {
+  color: #7A9C85;
+}
+/*links to work on wd page*/
 .wd-work {
   text-decoration: none;
   color: #C08497;
@@ -55,7 +59,6 @@ i:hover {
 .wd-work:hover {
   color: #7A9C85;
 }
-
 /*responsive sizing*/
 /*for small screens*/
 @media screen and (max-width: 400px) {
