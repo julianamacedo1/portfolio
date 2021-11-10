@@ -29,6 +29,9 @@ body {
 a:link {
   text-decoration: none;
 }
+i {
+  color: #C08497;
+}
 i:hover {
   color: #7A9C85;
 }
