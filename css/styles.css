@@ -35,20 +35,12 @@ i {
 i:hover {
   color: #7A9C85;
 }
-/*email link*/
-.e-link {
+/*contact links*/
+.contact-link {
   text-decoration: none;
   color: #C08497;
 }
-.e-link:hover {
-  color: #7A9C85;
-}
-/*linkedin link*/
-.linkedin-link {
-  text-decoration: none;
-  color: #C08497;
-}
-.linkedin-link:hover {
+.contact-link:hover {
   color: #7A9C85;
 }
 /*links to work on wd page*/
