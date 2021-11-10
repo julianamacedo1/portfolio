@@ -29,6 +29,9 @@ body {
 a:link {
   text-decoration: none;
 }
+i:hover {
+  color: #7A9C85;
+}
 /*email link*/
 .e-link {
   text-decoration: none;
