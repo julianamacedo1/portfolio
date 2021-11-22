@@ -1,0 +1,65 @@
+/* imports normalize */
+@import "normalize.css";
+
+/* title heading */
+h1 {
+  text-align: center;
+  font-family: courier;
+  font-size: 70px;
+}
+
+/* top and bottom paragraph */
+p {
+  text-align: center;
+  color: black;
+  font-family: courier;
+}
+
+/* background */
+body {
+  background-color: #E6C9FC;
+}
+
+/* image styling */
+img {
+  border-radius: 8px;
+  display: grid;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*for small screens*/
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 0px;
+    align-items: center;
+  }
+}
+
+/*for medium screens*/
+@media screen and (min-width: 601px) {
+  .grid {
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-gap: 0px;
+    align-items: center;
+  }
+}
+
+/*for large screens*/
+@media screen and (min-width: 1100px) {
+  .grid {
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-gap: 0px;
+    align-items: center;
+  }
+}
+
+/* grid styling */
+.grid-item {
+  border: 10px solid #E6C9FC;
+}
