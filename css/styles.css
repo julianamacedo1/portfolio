@@ -7,7 +7,7 @@ body {
 h2 {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   color: #7a9c85;
 }
 h3 {
@@ -37,8 +37,8 @@ a:link {
   color: #c08497;
 }
 .contact-link {
-    text-decoration: none;
-    color: #c08497;
+  text-decoration: none;
+  color: #c08497;
 }
 .e-link:hover {
   color: #7a9c85;
@@ -47,7 +47,7 @@ a:link {
   color: #7a9c85;
 }
 .contact-link:hover {
-    color: #7a9c85;
+  color: #7a9c85;
 }
 
 /*responsive sizing*/
