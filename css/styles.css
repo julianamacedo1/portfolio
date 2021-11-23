@@ -36,14 +36,18 @@ a:link {
   text-decoration: none;
   color: #c08497;
 }
+.contact-link {
+    text-decoration: none;
+    color: #c08497;
+}
 .e-link:hover {
   color: #7a9c85;
 }
 .wd-work:hover {
   color: #7a9c85;
 }
-.contact-link {
-    
+.contact-link:hover {
+    color: #7a9c85;
 }
 
 /*responsive sizing*/
