@@ -2,7 +2,7 @@
 @import "normalize.css";
 /*universal styles*/
 body {
-  color: black;
+  color: #000;
 }
 h2 {
   text-align: center;
