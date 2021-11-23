@@ -1,6 +1,9 @@
 /* imports normalize */
 @import "normalize.css";
 /*universal styles*/
+body {
+  color: black;
+}
 h2 {
   text-align: center;
   font-family: "Poppins", sans-serif;
