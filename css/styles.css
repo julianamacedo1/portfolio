@@ -2,12 +2,12 @@
 @import "normalize.css";
 /*universal styles*/
 body {
-  color: #000;
+  color: #ffffff;
 }
 h2 {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   color: #7a9c85;
 }
 h3 {
