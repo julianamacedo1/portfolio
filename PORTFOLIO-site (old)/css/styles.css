@@ -3,11 +3,9 @@
 /*universal styles*/
 h2 {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;  
-  font-weight: 700;
-  font-size: 30px;
-  color: #78487A;
-  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color:#7A9C85;
 }
 h3 {
   text-align: center;
