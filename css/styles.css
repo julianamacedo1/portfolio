@@ -50,6 +50,10 @@ a:link {
 .contact-link:hover {
   color: #7a9c85;
 }
+/*gd slides*/
+.slides {
+    padding-bottom: 5px;
+}
 
 /*responsive sizing*/
 /*for small screens*/
