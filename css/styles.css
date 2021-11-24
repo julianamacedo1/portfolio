@@ -3,7 +3,7 @@
 /*universal styles*/
 body {
   color: #ffffff;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 h2 {
   text-align: center;
@@ -120,7 +120,7 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .numbertext {
     text-align: center;
@@ -210,7 +210,7 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .numbertext {
     text-align: center;
@@ -301,7 +301,7 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .numbertext {
     text-align: center;
@@ -392,7 +392,7 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .numbertext {
     text-align: center;
@@ -483,7 +483,7 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .numbertext {
     text-align: center;
