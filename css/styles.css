@@ -67,7 +67,7 @@ a:link {
     text-align: center;
   }
   .header a {
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     background-color: #ffffff;
@@ -76,7 +76,7 @@ a:link {
     padding: 10px;
   }
   .header a:hover {
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     background-color: #7a9c85;
