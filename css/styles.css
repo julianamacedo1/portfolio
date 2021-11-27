@@ -65,7 +65,7 @@ a:link {
   /*header*/
   .header {
     text-align: center;
-    margin-bottom: 100px;
+    padding-bottom: 10px;
   }
   .header a {
     font-size: 20px;
