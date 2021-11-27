@@ -65,7 +65,7 @@ a:link {
   /*header*/
   .header {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
   .header a {
     font-size: 20px;
@@ -156,6 +156,7 @@ a:link {
   /*header*/
   .header {
     text-align: center;
+    padding-bottom: 25px;
   }
   .header a {
     font-size: 20px;
