@@ -417,7 +417,7 @@ a:link {
 /*for EXTRA large screens*/
 @media screen and (min-width: 1500px) {
   .logo {
-    width: 40%;
+    width: 35%;
     float: left;
     padding-left: 10px;
     padding-top: 10px;
