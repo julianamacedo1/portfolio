@@ -235,7 +235,7 @@ a:link {
 /*for large screens*/
 @media screen and (min-width: 600px) {
   .logo {
-    width: 30%;
+    width: 35%;
     float: left;
     padding-left: 10px;
     padding-top: 10px;
@@ -326,7 +326,7 @@ a:link {
 /*for extra large screens*/
 @media screen and (min-width: 1000px) {
   .logo {
-    width: 30%;
+    width: 35%;
     float: left;
     padding-left: 10px;
     padding-top: 10px;
@@ -417,7 +417,7 @@ a:link {
 /*for EXTRA large screens*/
 @media screen and (min-width: 1500px) {
   .logo {
-    width: 35%;
+    width: 40%;
     float: left;
     padding-left: 10px;
     padding-top: 10px;
