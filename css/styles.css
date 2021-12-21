@@ -608,4 +608,10 @@ a:link {
     margin-left: auto;
     margin-right: auto;
   }
+  .sr-video-o {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
