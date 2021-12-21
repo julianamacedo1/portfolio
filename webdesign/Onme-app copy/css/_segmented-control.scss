@@ -1,0 +1,46 @@
+.segmented-control-container {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    background-color: $color-background-contrast;
+    border-radius: #{$border-radius * 0.67};
+}
+
+.segmented-control-tab-title {
+    color: $color-contrast-secondary;
+    font-size: $text-size-extra-small;
+    z-index: 1;
+    cursor: pointer;
+    transition: color $transition-duration $transition-curve;
+}
+
+.segmented-control-tab-highlight {
+    --border-width: 0.125rem;
+
+    position: absolute;
+    top: var(--border-width);
+    left: var(--border-width);
+    width: calc(calc(100% * 0.5) - calc(var(--border-width) * 2));
+    height: calc(100% - calc(var(--border-width) * 2));
+    background-color: white;
+    border-radius: calc(#{$border-radius * 0.67} - var(--border-width));
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.33));
+    transition: transform $transition-duration $transition-curve;
+}
+
+@for $i from 1 through 3 {
+    .segmented-control-container[active-tab="#{$i}"] {
+        .segmented-control-tab-title:nth-of-type(#{$i}) {
+            font-weight: 600;
+            color: $color-contrast;
+        }
+        .segmented-control-tab-highlight {
+            transform: translateX(calc(#{100% * ($i - 1)} + calc(calc(var(--border-width) * #{$i}) * #{$i - 1})));
+        }
+    }
+}

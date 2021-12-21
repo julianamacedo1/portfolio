@@ -1,0 +1,108 @@
+.fittingroom-drawer-container {
+    --height: #{$nav-height-top-no-simulation * 1.125};
+    --height-expanded: 15rem;
+
+    position: absolute;
+    display: grid;
+    left: 0;
+    bottom: var(--nav-height-bottom);
+    width: 100%;
+    height: var(--height);
+    border-radius: $border-radius $border-radius 0 0;
+    backdrop-filter: blur($transparency-blur-intensity);
+    background-color: $color-transparency-background;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.125));
+    padding: 0 $content-padding-horizontal;
+    overflow: hidden;
+    transform: translateZ(0);
+    z-index: 4;
+    transition: height $transition-duration $transition-curve;
+}
+
+.fittingroom-drawer-container.expanded {
+    height: var(--height-expanded);
+
+    .fittingroom-drawer-expand-toggle::before {
+        top: calc(calc(1.141 * calc(0.4rem) / 4) * -1);
+        transform: rotateZ(225deg);
+    }
+}
+
+.fittingroom-drawer-top-text-container {
+    position: relative;
+    display: grid;
+    height: var(--height);
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+}
+
+.fittingroom-drawer-expand-toggle::before {
+    content: "";
+    position: relative;
+    top: calc(1.141 * calc(0.4rem) / 4);
+    height: 0.4rem;
+    width: 0.4rem;
+    border-top: 2.5px solid $color-contrast-secondary;
+    border-left: 2.5px solid $color-contrast-secondary;
+    border-radius: 1.25px;
+    transform: rotateZ(45deg);
+    background-color: transparent;
+    z-index: 1;
+    transition: top $transition-duration $transition-curve,
+        transform $transition-duration $transition-curve;
+}
+
+.fittingroom-drawer-expand-toggle {
+    position: relative;
+    display: flex;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: $color-background-contrast-light;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: filter $transition-duration $transition-curve;
+}
+
+.fittingroom-drawer-clothing-article-container {
+    position: relative;
+    display: grid;
+    left: #{$content-padding-horizontal * -1};
+    grid-auto-flow: column;
+    padding: 0 $content-padding-horizontal;
+    gap: 1rem;
+    width: calc(100% + #{$content-padding-horizontal * 2});
+    height: calc(var(--height-expanded) - var(--height));
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.fittingroom-drawer-clothing-article {
+    position: relative;
+    width: calc(calc(var(--height-expanded) - var(--height)) - 1rem);
+    height: calc(100% - 1rem);
+    background-color: $color-background-contrast-dark-with-alpha;
+    border-radius: $border-radius;
+    padding: $content-padding-vertical;
+    border: 3px solid transparent;
+    transition: border-color $transition-duration $transition-curve,
+        filter $transition-duration $transition-curve;
+}
+
+.fittingroom-drawer-clothing-article.selected {
+    border-color: $color-accent;
+}
+
+.fittingroom-drawer-clothing-article-image {
+    pointer-events: none;
+    width: 100%;
+}
+
+.fittingroom-drawer-clothing-article:active,
+.fittingroom-drawer-expand-toggle:active {
+    transition: none;
+    filter: brightness(75%);
+}

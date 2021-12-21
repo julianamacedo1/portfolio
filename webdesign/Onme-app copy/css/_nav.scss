@@ -1,0 +1,223 @@
+.top-nav,
+.bottom-nav {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: var(--color-transparency-background);
+    //backdrop-filter: blur($transparency-blur-intensity);
+    -webkit-transform: translateZ(0);
+    z-index: 10;
+}
+
+.top-nav {
+    --width: 100%;
+
+    height: var(--nav-height-top);
+    padding-top: var(--nav-vertical-offset-top);
+    border-bottom: 1px solid $color-background-contrast-with-alpha;
+}
+
+.top-nav.in-transition {
+    pointer-events: none;
+}
+
+.top-nav-content {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.67rem;
+    padding: 0 $content-padding-horizontal;
+    align-items: center;
+}
+
+.top-nav-section {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    align-items: center;
+}
+
+.top-nav-section.left {
+    justify-content: left;
+    text-align: left;
+}
+
+.top-nav-section.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.top-nav-section.right {
+    justify-content: right;
+    text-align: right;
+}
+
+.top-nav-page-title {
+    display: flex;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-self: center;
+}
+
+.top-nav-page-title.animate-in {
+    animation: nav-title-in $transition-duration $transition-curve;
+}
+
+.top-nav-page-title.animate-out {
+    animation: nav-title-out $transition-duration $transition-curve;
+}
+
+.top-nav-back-container::before {
+    content: "";
+    position: relative;
+    top: 0.033rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-top: 2.5px solid $color-accent;
+    border-left: 2.5px solid $color-accent;
+    border-radius: 1.25px;
+    transform-origin: center top;
+    transform: rotateZ(-45deg);
+    background-color: transparent;
+}
+
+.top-nav-back-container {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    grid-template-columns: max-content 1fr;
+    gap: 0.33rem;
+    align-items: center;
+    cursor: pointer;
+    color: $color-accent;
+    transition: filter $transition-duration $transition-curve;
+}
+
+.top-nav-back-container:active {
+    transition: none;
+    filter: brightness(75%);
+}
+
+.top-nav-back-container.at-root {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.top-nav-back-page-title {
+    width: max-content;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-self: left;
+    color: inherit;
+    pointer-events: none;
+}
+
+.top-nav-back-page-title:active {
+    filter: none;
+}
+
+.top-nav-back-page-title.aux {
+    position: absolute;
+    left: 1rem;
+    transform-origin: left center;
+    opacity: 0;
+}
+
+.top-nav-action-container.secondary.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.top-nav-back-page-title.animate-in {
+    animation: nav-back-in $transition-duration $transition-curve;
+}
+
+.top-nav-back-page-title.animate-out {
+    animation: nav-back-out $transition-duration $transition-curve;
+}
+
+.top-nav-back-page-title.aux.animate-in {
+    animation: nav-back-aux-in $transition-duration $transition-curve;
+}
+
+.top-nav-back-page-title.aux.animate-out {
+    animation: nav-back-aux-out $transition-duration $transition-curve;
+}
+
+.top-nav-back-container.animate-in::before {
+    animation: nav-back-chevron-in $transition-duration $transition-curve;
+}
+
+.top-nav-back-container.animate-out::before {
+    animation: nav-back-chevron-out $transition-duration $transition-curve;
+}
+
+.top-nav-action-container.secondary.animate-in {
+    animation: nav-secondary-action-in $transition-duration $transition-curve;
+}
+
+.top-nav-action-container.secondary.animate-out {
+    animation: nav-secondary-action-out $transition-duration $transition-curve;
+}
+
+.icon-button.top-nav-action {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.33rem;
+}
+
+.bottom-nav {
+    top: unset;
+    bottom: 0px;
+    height: var(--nav-height-bottom);
+    padding-bottom: var(--nav-vertical-offset-bottom);
+    border-top: 1px solid $color-background-contrast-with-alpha;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-nav-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    padding: 0 $content-padding-horizontal;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-nav-tab {
+    display: grid;
+    gap: 0.33rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: $color-contrast;
+    text-decoration: none;
+}
+
+.bottom-nav-tab-name {
+    color: inherit;
+    margin: 0;
+    font-size: $text-size-tiny;
+    text-align: center;
+}
+
+.bottom-nav-tab.active {
+    color: $color-accent;
+
+    .bottom-nav-icon::before {
+        background-color: $color-accent;
+    }
+}

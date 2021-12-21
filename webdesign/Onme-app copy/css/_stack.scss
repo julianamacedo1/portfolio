@@ -1,0 +1,50 @@
+.stack-animation-container.background,
+.stack-animation-container {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    pointer-events: none;
+}
+
+.stack-animation-container {
+    z-index: 5;
+
+    .avatar-body:not(.torso) {
+        animation: none !important;
+    }
+}
+
+.stack-animation-container.animate-in,
+.stack-animation-container.animate-out,
+.stack-animation-container.animate-in-slide,
+.stack-animation-container.animate-out-slide {
+    will-change: transform;
+}
+
+.stack-animation-container.animate-in {
+    animation: stack-in $transition-duration $transition-curve;
+}
+
+.stack-animation-container.background.animate-in-slide {
+    animation: stack-in-background-slide $transition-duration $transition-curve;
+}
+
+.stack-animation-container.background.animate-in {
+    animation: stack-in-background $transition-duration $transition-curve;
+}
+
+.stack-animation-container.animate-out {
+    animation: stack-out $transition-duration $transition-curve;
+}
+
+.stack-animation-container.background.animate-out-slide {
+    animation: stack-out-background-slide $transition-duration $transition-curve;
+}
+
+.stack-animation-container.background.animate-out {
+    animation: stack-out-background $transition-duration $transition-curve;
+}
