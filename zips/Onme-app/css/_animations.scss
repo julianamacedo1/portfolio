@@ -1,0 +1,297 @@
+@keyframes modal-background-to-deep-in {
+    from {
+        filter: brightness(80%);
+        transform: scale(0.9) translateY($nav-vertical-offset-top);
+        opacity: 1;
+    }
+    to {
+        filter: brightness(60%);
+        transform: scale(0.8) translateY(#{$nav-vertical-offset-top - ($nav-vertical-offset-top * 0.1)});
+        opacity: 0;
+    }
+}
+
+
+@keyframes modal-background-in {
+    from {
+        border-radius: var(--simulated-device-border-radius) var(--simulated-device-border-radius) 0 0;
+        filter: brightness(100%);
+        transform: scale(1.0) translateY(0);
+    }
+    to {
+        border-radius: $border-radius $border-radius 0 0;
+        filter: brightness(80%);
+        transform: scale(0.9) translateY($nav-vertical-offset-top);
+    }
+}
+
+@keyframes modal-to-background-in {
+    from {
+        filter: brightness(100%);
+        transform: scale(1.0) translateY($modal-view-offset-top);
+    }
+    to {
+        filter: brightness(80%);
+        transform: scale(0.9) translateY($nav-vertical-offset-top);
+    }
+}
+
+@keyframes modal-in {
+    from {
+        //height: 100%;
+        transform: translateY(calc(100% + #{$modal-view-offset-top}));
+    }
+    to {
+        //height: calc(100% - #{$nav-vertical-offset-top + ($border-radius / 2)});
+        transform: translateY($modal-view-offset-top);
+    }
+}
+
+@keyframes modal-background-to-deep-out {
+    from {
+        filter: brightness(60%);
+        transform: scale(0.8) translateY(#{$nav-vertical-offset-top - ($nav-vertical-offset-top * 0.1)});
+        opacity: 0;
+    }
+    to {
+        filter: brightness(80%);
+        transform: scale(0.9) translateY($nav-vertical-offset-top);
+        opacity: 1;
+    }
+}
+
+@keyframes modal-background-out {
+    from {
+        border-radius: $border-radius $border-radius 0 0;
+        filter: brightness(80%);
+        transform: scale(0.9) translateY($nav-vertical-offset-top);
+    }
+    to {
+        border-radius: calc(var(--simulated-device-border-radius) - var(--simulated-device-stroke)) calc(var(--simulated-device-border-radius) - var(--simulated-device-stroke)) 0 0;
+        filter: brightness(100%);
+        transform: scale(1.0) translateY(0);
+    }
+}
+
+@keyframes modal-to-background-out {
+    from {
+        filter: brightness(80%);
+        transform: scale(0.9) translateY($nav-vertical-offset-top);
+    }
+    to {
+        filter: brightness(100%);
+        transform: scale(1.0) translateY($modal-view-offset-top);
+    }
+}
+
+@keyframes modal-out {
+    from {
+        //height: calc(100% - #{$nav-vertical-offset-top + ($border-radius / 2)});
+        transform: translateY($modal-view-offset-top);
+    }
+    to {
+        //height: 100%;
+        transform: translateY(calc(100% + #{$modal-view-offset-top}));  
+    }
+}
+
+
+
+@keyframes stack-in-background {
+    from {
+        transform: translateX(0);
+        filter: brightness(100%);
+    }
+    to {
+        transform: translateX(-33%);
+        filter: brightness(75%);
+    }
+}
+
+@keyframes stack-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes stack-in-background-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes stack-in-background {
+    from {
+        transform: translateX(0);
+        filter: brightness(100%);
+    }
+    to {
+        transform: translateX(-33%);
+        filter: brightness(75%);
+    }
+}
+
+@keyframes stack-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes stack-out-background-slide {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes stack-out-background {
+    from {
+        transform: translateX(-33%);
+        filter: brightness(75%);
+    }
+    to {
+        transform: translateX(0);
+        filter: brightness(100%);
+    }
+}
+
+
+
+@keyframes nav-back-aux-in {
+    from {
+        transform: scale(1);
+        opacity: 100;
+    }
+    to {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes nav-back-in {
+    from {
+        --c: calc(calc(0.5rem + 0.33rem) - 0.25rem);
+        left: calc(calc(200% + calc(calc(0.5rem + 0.33rem) - 0.25rem)) - calc(50% - calc(calc(0.5rem + 0.33rem) - 0.25rem)));
+        transform: translateX(-50%);
+        font-weight: 600;
+        color: $color-contrast;
+    }
+    to {
+        left: 0;
+        transform: translateX(0);
+        font-weight: normal;
+        color: $color-accent;
+    }
+}
+
+@keyframes nav-back-chevron-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes nav-title-in {
+    from {
+        left: 300%;
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes nav-back-aux-out {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
+
+@keyframes nav-back-out {
+    from {
+        left: 0;
+        transform: translateX(0);
+        font-weight: normal;
+        color: $color-accent;
+    }
+    to {
+        --c: calc(calc(0.5rem + 0.33rem) - 0.25rem);
+        left: calc(calc(200% + calc(calc(0.5rem + 0.33rem) - 0.25rem)) - calc(50% - calc(calc(0.5rem + 0.33rem) - 0.25rem)));
+        transform: translateX(-50%);
+        font-weight: 600;
+        color: $color-contrast;
+    }
+}
+
+@keyframes nav-back-chevron-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes nav-title-out {
+    from {
+        left: 0;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        left: 300%;
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}
+
+@keyframes nav-secondary-action-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes nav-secondary-action-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes avatar-body-customization-hint {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
