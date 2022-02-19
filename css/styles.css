@@ -1,0 +1,798 @@
+/* imports normalize */
+@import "normalize.css";
+/*universal styles*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  color: #f8f1f3;
+  margin-bottom: 150px;
+  background-color: #f8f1f3;
+}
+h2 {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  color: #4e6a57;
+}
+h3 {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  color: #c08497;
+  font-size: 30px;
+  font-style: bold;
+}
+p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #4e6a57;
+  line-height: 150%;
+}
+a:link {
+  text-decoration: none;
+}
+/*email link*/
+.e-link {
+  text-decoration: none;
+  color: #4e6a57;
+}
+.wd-work {
+  text-decoration: none;
+  color: #4e6a57;
+}
+.contact-link {
+  text-decoration: none;
+  color: #7a9c85;
+}
+.e-link:hover {
+  color: #4e6a57;
+}
+.wd-work:hover {
+  color: #7a9c85;
+}
+.contact-link:hover {
+  color: #4e6a57;
+}
+
+/*responsive sizing*/
+/*for small screens*/
+@media screen and (max-width: 400px) {
+  .logo-name {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo-2 {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .profile-pic {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*header*/
+  .header {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .header a {
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #f8f1f3;
+    color: #4e6a57;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .header a:hover {
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #4e6a57;
+    color: #f8f1f3;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  /*links to work*/
+  .gdlink {
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: #7a9c85;
+  }
+  .wdlink {
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    color: #7a9c85;
+  }
+  .gdlink:hover {
+    color: #4e6a57;
+  }
+  .wdlink:hover {
+    color: #4e6a57;
+  }
+  /*page content*/
+  .content {
+    font-size: 20px;
+    margin: 10%;
+  }
+  .content-2 {
+    font-size: 20px;
+    margin: 3%;
+  }
+  .content-3 {
+    font-size: 25px;
+  }
+  /*wd grid*/
+  .grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    background-color: #dcbbc5;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+  /*work images*/
+  .img2 {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  .numbertext {
+    text-align: center;
+  }
+  .arrow_right {
+    width: 30%;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+  }
+  .arrow_left {
+    width: 30%;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+  }
+  /*wd video recordings*/
+  .sr-video-ea {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-e {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-j {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-o {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*for medium screens*/
+@media screen and (min-width: 401px) {
+  .logo-name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .logo-2 {
+    width: 10%;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .profile-pic {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*header*/
+  .header {
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+  .header a {
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #f8f1f3;
+    color: #4e6a57;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .header a:hover {
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #4e6a57;
+    color: #f8f1f3;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  /*links to work*/
+  .gdlink {
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: #7a9c85;
+  }
+  .wdlink {
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    color: #7a9c85;
+  }
+  .gdlink:hover {
+    color: #4e6a57;
+  }
+  .wdlink:hover {
+    color: #4e6a57;
+  }
+  /*page content*/
+  .content {
+    font-size: 20px;
+    margin: 10%;
+  }
+  .content-2 {
+    font-size: 20px;
+    margin: 3%;
+  }
+  .content-3 {
+    font-size: 25px;
+  }
+  /*wd grid*/
+  .grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    background-color: #dcbbc5;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+  /*work images*/
+  .img2 {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  .numbertext {
+    text-align: center;
+  }
+  .arrow_right {
+    width: 30%;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+  }
+  .arrow_left {
+    width: 30%;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+  }
+  /*wd video recordings*/
+  .sr-video-ea {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-e {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-j {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-o {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*for large screens*/
+@media screen and (min-width: 600px) {
+  .logo-name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+  .logo-2 {
+    width: 7%;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .profile-pic {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*header*/
+  .header {
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  .header a {
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #f8f1f3;
+    color: #4e6a57;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .header a:hover {
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #4e6a57;
+    color: #f8f1f3;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  /*links to work*/
+  .gdlink {
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: #7a9c85;
+  }
+  .wdlink {
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    color: #7a9c85;
+  }
+  .gdlink:hover {
+    color: #4e6a57;
+  }
+  .wdlink:hover {
+    color: #4e6a57;
+  }
+  /*page content*/
+  .content {
+    font-size: 20px;
+    margin: 5%;
+  }
+  .content-2 {
+    font-size: 20px;
+    margin: 3%;
+  }
+  .content-3 {
+    font-size: 25px;
+  }
+  /*wd grid*/
+  .grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    background-color: #dcbbc5;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+  /*work images*/
+  .img2 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  .numbertext {
+    text-align: center;
+  }
+  .arrow_right {
+    width: 10%;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+  }
+  .arrow_left {
+    width: 10%;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+  }
+  /*wd video recordings*/
+  .sr-video-ea {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-e {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-j {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-o {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*for extra large screens*/ /*WORKING WIDTH*/
+@media screen and (min-width: 1000px) {
+  .logo-name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .logo-2 {
+    width: 7%;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .profile-pic {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*header*/
+  .header {
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  .header a {
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #f8f1f3;
+    color: #4e6a57;
+    border-radius: 40px;
+    padding: 15px;
+  }
+  .header a:hover {
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #4e6a57;
+    color: #f8f1f3;
+    border-radius: 40px;
+    padding: 15px;
+  }
+  /*links to work*/
+  .gdlink {
+    font-size: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: #7a9c85;
+  }
+  .wdlink {
+    font-size: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    color: #7a9c85;
+  }
+  .gdlink:hover {
+    color: #4e6a57;
+  }
+  .wdlink:hover {
+    color: #4e6a57;
+  }
+  /*page content*/
+  .content {
+    font-size: 25px;
+    margin: 5%;
+  }
+  .content-2 {
+    font-size: 25px;
+    margin: 3%;
+  }
+  .content-3 {
+    font-size: 25px;
+  }
+  /*wd grid*/
+  .grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    background-color: #dcbbc5;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 90px;
+  }
+  /*work images*/
+  .img2 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  .numbertext {
+    text-align: center;
+  }
+  .arrow_right {
+    width: 10%;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+  }
+  .arrow_left {
+    width: 10%;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+  }
+  /*wd video recordings*/
+  .sr-video-ea {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-e {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-j {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-o {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*for EXTRA large screens*/
+@media screen and (min-width: 1500px) {
+  .logo-name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  .logo-2 {
+    width: 5%;
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .profile-pic {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*header*/
+  .header {
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+  .header a {
+    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #f8f1f3;
+    color: #4e6a57;
+    border-radius: 40px;
+    padding: 15px;
+  }
+  .header a:hover {
+    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    background-color: #4e6a57;
+    color: #f8f1f3;
+    border-radius: 40px;
+    padding: 20px;
+  }
+  /*links to work*/
+  .gdlink {
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: #7a9c85;
+  }
+  .wdlink {
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    color: #7a9c85;
+  }
+  .gdlink:hover {
+    color: #4e6a57;
+  }
+  .wdlink:hover {
+    color: #4e6a57;
+  }
+  /*page content*/
+  .content {
+    font-size: 40px;
+    margin: 5%;
+  }
+  .content-2 {
+    font-size: 40px;
+    margin: 3%;
+  }
+  .content-3 {
+    font-size: 45px;
+  }
+  /*wd grid*/
+  .grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    background-color: #dcbbc5;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+  /*work images*/
+  .img2 {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  .numbertext {
+    text-align: center;
+  }
+  .arrow_right {
+    width: 10%;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
+  .arrow_left {
+    width: 10%;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+  }
+  /*text adjustment*/
+  h2 {
+    padding: 50px;
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  /*wd video recordings*/
+  .sr-video-ea {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-e {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-j {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-o {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
