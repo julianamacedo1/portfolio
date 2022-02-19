@@ -70,8 +70,7 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 20px;
   }
   .profile-pic {
     width: 80%;
