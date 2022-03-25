@@ -323,25 +323,25 @@ a:link {
   }
   /*wd video recordings*/
   .sr-video-ea {
-    width: 90%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .sr-video-e {
-    width: 90%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .sr-video-j {
-    width: 90%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .sr-video-o {
-    width: 90%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -470,25 +470,25 @@ a:link {
   }
   /*wd video recordings*/
   .sr-video-ea {
-    width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .sr-video-e {
     width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+  .sr-video-e {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .sr-video-j {
-    width: 80%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .sr-video-o {
-    width: 40%;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -771,25 +771,25 @@ a:link {
   }
   /*wd video recordings*/
   .sr-video-ea {
-    width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .sr-video-e {
     width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+  .sr-video-e {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .sr-video-j {
-    width: 80%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .sr-video-o {
-    width: 40%;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
