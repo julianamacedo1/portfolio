@@ -577,17 +577,7 @@ a:link {
     font-size: 25px;
   }
   /*wd grid*/
-  .grid-container {
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 90%;
-    background-color: #dcbbc5;
-    padding: 40px;
-    margin-bottom: 30px;
-    border-radius: 90px;
-  }
+  
   /*work images*/
   .img2 {
     width: 60%;
@@ -638,6 +628,15 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    background-color: #dcbbc5;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 90px;
   }
 }
 
