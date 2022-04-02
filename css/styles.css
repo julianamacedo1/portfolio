@@ -29,8 +29,8 @@ p {
   line-height: 150%;
 }
 i {
-  width: auto;
-  height: auto;
+  width: 25px;
+  height: 25px;
 }
 a:link {
   text-decoration: none;
