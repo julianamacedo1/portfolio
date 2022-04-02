@@ -28,7 +28,7 @@ p {
   color: #4e6a57;
   line-height: 150%;
 }
-i {
+.fa-solid.fa-circle-arrow-right {
   font-size: 25px;
 }
 a:link {
