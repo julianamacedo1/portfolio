@@ -473,25 +473,25 @@ a:link {
   }
   /*wd video recordings*/
   .sr-video-ea {
-    width: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .sr-video-e {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .sr-video-j {
     width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+  .sr-video-e {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sr-video-j {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .sr-video-o {
-    width: 30%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
