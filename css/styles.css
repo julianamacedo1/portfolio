@@ -31,7 +31,12 @@ p {
 .icons {
   width: 30px; 
   height: 30px; 
+  text-decoration: none;
+  color: #4e6a57;
   height: -10px;
+}
+.icons:hover {
+  color: #7a9c85;
 }
 a:link {
   text-decoration: none;
