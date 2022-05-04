@@ -1,0 +1,83 @@
+.heading {
+    position: relative;
+    margin: 0;
+    font-size: var(--font-size-heading-normal);
+}
+
+.heading.large {
+    font-size: var(--font-size-heading-large);
+}
+
+.heading.small {
+    font-size: var(--font-size-heading-small);
+}
+
+.heading.stylized::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.25rem;
+    width: 4rem;
+    transform: translateY(0.5rem);
+    background-color: $col-gold;
+}
+
+.heading.stylized {
+    width: max-content;
+}
+
+.heading.stylized.full::after {
+    width: 100%;
+}
+
+.text {
+    position: relative;
+    margin: 0;
+    font-size: inherit;
+    max-width: 100%;
+}
+
+.font-size-text-large,
+.text.large {
+    font-size: $font-size-text-large !important;
+}
+
+.font-size-text-normal {
+    font-size: $font-size-text-normal !important;
+}
+
+.font-size-text-small,
+.text.small {
+    font-size: $font-size-text-small !important;
+}
+
+.text.label {
+    font-size: $font-size-text-small;
+    color: var(--col-text-label);
+}
+
+.text-center-aligned,
+.text.center-aligned {
+    text-align: center;
+}
+
+.text-right-aligned,
+.text.right-aligned {
+    text-align: right;
+}
+
+.text.uppercase {
+    text-transform: uppercase;
+}
+
+.heading.financial::before,
+.text.financial::before {
+    content: "$";
+}
+
+@media screen and (min-width: #{$tablet-min-width}) {
+    .text-right-aligned-desktop-only {
+        text-align: right;
+    }
+}

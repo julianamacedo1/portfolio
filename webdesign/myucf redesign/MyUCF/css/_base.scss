@@ -1,0 +1,197 @@
+$col-black: rgb(0, 0, 0);
+$col-black-50: rgba(0, 0, 0, 0.5);
+$col-black-25: rgba(0, 0, 0, 0.25);
+$col-black-125: rgba(0, 0, 0, 0.125);
+
+$col-gray: rgb(128, 128, 128);
+$col-gray-50: rgba(128, 128, 128, 0.5);
+$col-gray-25: rgba(128, 128, 128, 0.25);
+$col-gray-125: rgba(128, 128, 128, 0.125);
+$col-gray-0625: rgba(128, 128, 128, 0.0625);
+
+$col-white: rgb(255, 255, 255);
+$col-white-50: rgba(255, 255, 255, 0.5);
+$col-white-25: rgba(255, 255, 255, 0.25);
+$col-white-125: rgba(255, 255, 255, 0.125);
+
+$col-gold: rgb(255, 202, 6);
+$col-gold-50: rgba(255, 202, 6, 0.5);
+$col-gold-25: rgba(255, 202, 6, 0.25);
+$col-gold-125: rgba(255, 202, 6, 0.125);
+
+$col-tab-nav: rgb(36, 36, 36);
+
+$col-background: $col-white;
+$col-background-dark: rgb(48, 48, 48);
+$col-text: $col-black;
+$col-text-dark: $col-white;
+$col-text-label: $col-black-50;
+$col-text-label-dark: $col-white-50;
+
+$desktop-min-width: 1200px;
+$tablet-max-width: $desktop-min-width;
+$tablet-min-width: 750px;
+$mobile-max-width: $tablet-min-width;
+
+$app-content-max-width: 1200px;
+
+$font-size-heading-large: 2rem;
+$font-size-heading-large-mobile: 1.75rem;
+$font-size-heading-normal: 1.67rem;
+$font-size-heading-normal-mobile: 1.5rem;
+$font-size-heading-small: 1.33rem;
+$font-size-heading-small-mobile: 1.25rem;
+$font-size-text-large: 1.2rem;
+$font-size-text-normal: 1rem;
+$font-size-text-small: 0.8rem;
+
+$border-radius: 0.33rem;
+
+$padding-horizontal: 2rem;
+$padding-vertical: 2rem;
+$padding-horizontal-small: 1rem;
+$padding-vertical-small: 1rem;
+
+$top-header-width: 100%;
+$top-header-height: 6.5rem;
+$top-header-height-mobile: 4.655rem;
+
+$tab-navigation-bar-width: 14rem;
+$tab-navigation-bar-height: 100vh;
+$tab-navigation-bar-width-mobile: 100%;
+$tab-navigation-bar-height-mobile: 3.5rem;
+
+$tab-navigation-bar-logo-width: 100%;
+$tab-navigation-bar-logo-height: $top-header-height;
+
+$drop-shadow: drop-shadow(0px 1.5px 3px $col-gray-50);
+
+$transition-duration-short: 0.1s;
+$transition-duration: 0.2s;
+$transition-duration-medium: 0.33s;
+$transition-duration-long: 0.5s;
+$transition-curve: linear;
+$transition-curve-expo: cubic-bezier(0.87, 0, 0.13, 1);
+$transition-curve-expo-ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+$transition-curve-expo-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+$transition-curve-spring-ease-in: cubic-bezier(0.36, 0, 0.66, -0.56);
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/GothamBook.otf");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/GothamMedium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/GothamBold.otf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../assets/fonts/OpenDyslexic/OpenDyslexicRegular.otf");
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../assets/fonts/OpenDyslexic/OpenDyslexicRegular.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../assets/fonts/OpenDyslexic/OpenDyslexicBold.otf");
+  font-weight: 900;
+}
+
+:root {
+  --vhc: 1vh; // Maximum viewport height with UI chrome visible (in mobile Safari with status bar fully extended, etc.) (Updated via JS)
+  --vhcd: 1vh; // Actual viewport height (dynamic) (Updated via JS)
+
+  --col-background: #{$col-background};
+  --col-background-dark-light: #{$col-background};
+  --col-text: #{$col-text};
+  --col-text-label: #{$col-text-label};
+  --font-size-heading-large: #{$font-size-heading-large};
+  --font-size-heading-normal: #{$font-size-heading-normal};
+  --font-size-heading-small: #{$font-size-heading-small};
+
+  font-family: "Gotham", Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  color: var(--col-text);
+}
+
+:root[appearance=dark] {
+  --col-background: #{$col-background-dark};
+  --col-text: #{$col-text-dark};
+  --col-text-label: #{$col-text-label-dark};
+}
+
+:root[font=dyslexic] {
+  font-family: "OpenDyslexic", "Gotham", Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+#app {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  width: 100%;
+  height: calc(var(--vhc) * 100);
+  background-color: var(--col-background);
+}
+
+#app.no-nav {
+  grid-template-columns: auto;
+}
+
+#app-content {
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  //scrollbar-gutter: stable both-edges;
+}
+
+#app-content.no-header {
+  grid-template-rows: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([appearance=light]) {
+    --col-background: #{$col-background-dark};
+    --col-text: #{$col-text-dark};
+    --col-text-label: #{$col-text-label-dark};
+  }
+}
+
+@media screen and (max-width: #{$mobile-max-width}) {
+  :root {
+    --font-size-heading-large: #{$font-size-heading-large-mobile};
+    --font-size-heading-normal: #{$font-size-heading-normal-mobile};
+    --font-size-heading-small: #{$font-size-heading-small-mobile};
+  }
+
+  #app {
+    grid-template-columns: auto;
+  }
+
+  #app-content:not(.no-header) {
+    top: $tab-navigation-bar-height-mobile;
+    height: calc(100% - #{$tab-navigation-bar-height-mobile});
+  }
+}

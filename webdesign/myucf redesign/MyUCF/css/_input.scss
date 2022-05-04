@@ -1,0 +1,14 @@
+.input {
+    position: relative;
+    border: none;
+    background-color: $col-gray-125;
+    padding: $padding-vertical-small $padding-horizontal-small;
+    border-radius: $border-radius;
+    color: var(--col-text);
+    //font-size: $font-size-text-small;
+}
+
+.input::placeholder {
+    color: var(--col-text);
+    opacity: 0.33;
+}

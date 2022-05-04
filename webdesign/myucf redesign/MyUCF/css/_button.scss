@@ -1,0 +1,77 @@
+.button {
+    position: relative;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: $padding-vertical-small $padding-horizontal;
+    width: max-content;
+    min-height: 48px;
+    border-radius: $border-radius;
+    background-color: $col-gold-25;
+    color: var(--col-text);
+    cursor: pointer;
+    font-size: $font-size-text-small;
+    font-weight: 600;
+    text-decoration: none;
+    filter: brightness(100%);
+    transition: filter $transition-duration $transition-curve,
+        background-color $transition-duration, $transition-curve;
+}
+
+.button:not(:focus) {
+    outline: none;
+}
+
+.button.prominent {
+    background-color: $col-gold;
+    color: $col-black;
+}
+
+.button.outlined {
+    background-color: transparent;
+}
+
+.button.outlined::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $col-gold;
+    background-color: transparent;
+    z-index: 1;
+    border-radius: inherit;
+    transition: border $transition-duration $transition-curve,
+        background-color $transition-duration $transition-curve;
+}
+
+.button.full-width {
+    width: 100%;
+}
+
+.button.slim {
+    font-weight: normal;
+    min-height: unset;
+    padding: calc(#{$padding-vertical-small} * 0.5) $padding-horizontal-small;
+}
+
+.button:not(.outlined):hover {
+    filter: brightness(95%);
+}
+
+.button.outlined:hover::before {
+    background-color: $col-gold-25;
+    border-width: 3px;
+}
+
+.button:active {
+    transition: none;
+    filter: brightness(90%) !important;
+}
+
+@media screen and (max-width: #{$mobile-max-width}) {
+    .button:not(.slim) {
+        width: 100%;
+    }
+}

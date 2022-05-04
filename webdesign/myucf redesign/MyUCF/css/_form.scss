@@ -1,0 +1,99 @@
+#form-card {
+    width: 26.5rem;
+    max-width: 100%;
+    height: max-content;
+    justify-self: center;
+    align-self: center;
+
+    .card-body {
+        padding: $padding-vertical $padding-horizontal;
+    }
+
+    .card-footer {
+        padding: $padding-vertical-small $padding-horizontal;
+        grid-auto-flow: column;
+        gap: 1rem;
+    }
+}
+
+.form {
+    position: relative;
+    display: grid;
+    gap: 0.5rem;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+
+    .button[type=submit] {
+        margin-top: $padding-vertical-small;
+    }
+}
+
+.form-feedback-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    border-radius: $border-radius;
+    //border: 2px solid $col-gold;
+    align-items: center;
+    gap: 0.75em;
+    padding: $padding-vertical-small $padding-horizontal-small;
+    background-color: $col-gold-25;
+    margin-bottom: 1rem;
+}
+
+.myucf-logo {
+    position: relative;
+    width: 100%;
+    max-width: 12rem;
+    padding-top: calc(min(100%, 12rem) * 0.305177);
+    background-image: url("../assets/images/myUCFmark_black.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+@mixin myucf-logo-dark {
+    .myucf-logo {
+        background-image: url("../assets/images/myUCFmark_white.png");
+    }
+}
+
+:root[appearance=dark] {
+    @include myucf-logo-dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([appearance=light]) {
+        @include myucf-logo-dark;
+    }
+}
+
+@media screen and (max-width: #{$mobile-max-width}) {
+    #form-card {
+        width: 100%;
+        max-width: unset;
+        filter: none;
+        align-self: flex-start;
+        padding: 0 $padding-horizontal-small;
+
+        .card-body,
+        .card-footer {
+            padding: $padding-vertical-small 0;
+        }
+
+        .card-body {
+            padding-bottom: $padding-vertical;
+        }
+
+        .card-footer {
+            padding-top: $padding-vertical;
+            grid-auto-flow: row;
+        }
+    }
+
+    #form-card::after {
+        border: none;
+    }
+}

@@ -1,0 +1,382 @@
+.tab-nav-container {
+    position: sticky;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    top: 0;
+    width: $tab-navigation-bar-width;
+    height: $tab-navigation-bar-height;
+    background-color: $col-tab-nav;
+    color: white;
+    overflow: auto;
+    //scrollbar-gutter: stable both-edges;
+    z-index: 20;
+}
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+    width: $tab-navigation-bar-logo-width;
+    height: $tab-navigation-bar-logo-height;
+    background-color: $col-black;
+    padding: 0 $padding-horizontal;
+}
+
+.nav-logo {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url("../assets/images/myUCFmark_studentcenter_white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.tab-nav-content {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    height: max-content;
+    min-height: 100%;
+}
+
+.tab-nav-list-container {
+    display: grid;
+    margin: 0;
+    gap: 0.33rem;
+    padding: $padding-vertical #{$padding-horizontal * 0.5};
+}
+
+.tab-nav-list-container.bottom-aligned {
+    align-self: flex-end;
+}
+
+.tab-item-container {
+    list-style: none;
+}
+
+.tab-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.67rem;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    padding: 0 #{$padding-horizontal * 0.5};
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tab-item,
+.tab-item:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tab-item:hover {
+    background-color: $col-white-125;
+}
+
+.tab-item:active {
+    transition: none;
+    background-color: $col-white-25;
+}
+
+.tab-item[active] {
+    background-color: $col-gold;
+    color: $col-tab-nav;
+    font-weight: 600;
+}
+
+.tab-item[icon]::before {
+    content: "";
+    position: relative;
+    width: 1.33rem;
+    height: 1.33rem;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: $col-white;
+}
+
+.tab-item[icon=home]::before {
+    mask-image: url("../assets/images/icons/home.png");
+}
+
+.tab-item[icon=academics]::before {
+    mask-image: url("../assets/images/icons/academics.png");
+}
+
+.tab-item[icon=finances]::before {
+    mask-image: url("../assets/images/icons/finances.png");
+}
+
+.tab-item[icon=tasks]::before {
+    mask-image: url("../assets/images/icons/tasks.png");
+}
+
+.tab-item[icon=settings]::before {
+    mask-image: url("../assets/images/icons/settings.png");
+}
+
+.tab-item[icon=webcourses]::before {
+    mask-image: url("../assets/images/icons/webcourses.png");
+}
+
+.tab-item[icon=email]::before {
+    mask-image: url("../assets/images/icons/email.png");
+}
+
+.tab-item[icon=resources]::before {
+    mask-image: url("../assets/images/icons/resources.png");
+}
+
+.tab-item[icon=logout]::before {
+    mask-image: url("../assets/images/icons/logout.png");
+}
+
+.tab-item[icon=info]::before {
+    mask-image: url("../assets/images/icons/info.png");
+}
+
+.tab-item[active][icon]::before {
+    background-color: $col-tab-nav;
+}
+
+.tab-separator {
+    width: calc(100% - #{$padding-horizontal});
+    height: 1px;
+    border: none;
+    background-color: $col-white-25;
+}
+
+.tab-nav-mobile-toggle {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+@keyframes nav-open {
+    from {
+        height: $tab-navigation-bar-height-mobile;
+    }
+    to {
+        height: calc(100% - env(safe-area-inset-bottom));
+    }
+}
+
+@keyframes nav-close {
+    from {
+        height: calc(100% - env(safe-area-inset-bottom));
+    }
+    to {
+        height: $tab-navigation-bar-height-mobile;
+    }
+}
+
+@keyframes nav-mobile-toggle-top-open {
+    0% {
+        top: 25%;
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    50% {
+        top: 50%;
+        transform: translateY(-50%) rotateZ(0deg);
+    }
+    100% {
+        top: 50%;
+        transform: translateY(-50%) rotateZ(45deg);
+    }
+}
+
+@keyframes nav-mobile-toggle-bottom-open {
+    0% {
+        bottom: 25%;
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    50% {
+        bottom: 50%;
+        transform: translateY(50%) rotateZ(0deg);
+    }
+    100% {
+        bottom: 50%;
+        transform: translateY(50%) rotateZ(-45deg);
+    }
+}
+
+@keyframes nav-mobile-toggle-top-close {
+    0% {
+        top: 50%;
+        transform: translateY(-50%) rotateZ(45deg);
+    }
+    50% {
+        top: 50%;
+        transform: translateY(-50%) rotateZ(0deg);
+    }
+    100% {
+        top: 25%;
+        transform: translateY(0%) rotateZ(0deg);
+    }
+}
+
+@keyframes nav-mobile-toggle-bottom-close {
+    0% {
+        bottom: 50%;
+        transform: translateY(50%) rotateZ(-45deg);
+    }
+    50% {
+        bottom: 50%;
+        transform: translateY(50%) rotateZ(0deg);
+    }
+    100% {
+        bottom: 25%;
+        transform: translateY(0%) rotateZ(0deg);
+    }
+}
+
+@keyframes nav-list-open {
+    from {
+        opacity: 0;
+        gap: 0;
+    }
+    to {
+        opacity: 1;
+        gap: 0.33rem;
+    }
+}
+
+@keyframes nav-list-close {
+    from {
+        opacity: 1;
+        gap: 0.33rem;
+    }
+    to {
+        opacity: 0;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tab-nav-container {
+        position: fixed;
+        width: $tab-navigation-bar-width-mobile;
+        height: $tab-navigation-bar-height-mobile;
+        grid-template-columns: 1fr max-content;
+        grid-template-rows: $tab-navigation-bar-height-mobile 1fr;
+        background-color: $col-black;
+        gap: 1rem;
+        overflow: hidden;
+    }
+
+    .tab-nav-content {
+        position: absolute;
+        display: none;
+        top: $tab-navigation-bar-height-mobile;
+        width: 100%;
+        min-height: unset;
+        height: calc(calc(100% - #{$tab-navigation-bar-height-mobile}) - env(safe-area-inset-bottom));
+        background-color: $col-tab-nav;
+        overflow: hidden;
+    }
+
+    .tab-nav-container.animate-open,
+    .tab-nav-container.animate-close {
+        pointer-events: none;
+
+        .tab-nav-content {
+            display: grid;
+            overflow: hidden !important;
+        }
+    }
+
+    .tab-nav-container.animate-open {
+        animation: nav-open $transition-duration-long $transition-curve-expo;
+
+        .tab-nav-list-container {
+            animation: nav-list-open $transition-duration-long $transition-curve-expo;
+        }
+
+        .tab-nav-mobile-toggle::before {
+            animation: nav-mobile-toggle-top-open $transition-duration-long $transition-curve-expo;
+        }
+
+        .tab-nav-mobile-toggle::after {
+            animation: nav-mobile-toggle-bottom-open $transition-duration-long $transition-curve-expo;
+        }
+    }
+
+    .tab-nav-container.animate-close {
+        animation: nav-close $transition-duration-long $transition-curve-expo;
+
+        .tab-nav-list-container {
+            animation: nav-list-close $transition-duration-long $transition-curve-expo;
+        }
+
+        .tab-nav-mobile-toggle::before {
+            animation: nav-mobile-toggle-top-close $transition-duration-long $transition-curve-expo;
+        }
+
+        .tab-nav-mobile-toggle::after {
+            animation: nav-mobile-toggle-bottom-close $transition-duration-long $transition-curve-expo;
+        }
+    }
+
+    .tab-nav-container[open] {
+        height: 100%;
+
+        .tab-nav-content {
+            display: grid;
+            overflow: auto;
+        }
+
+        .tab-nav-mobile-toggle::before {
+            top: 50%;
+            transform: translateY(-50%) rotateZ(-45deg);
+        }
+
+        .tab-nav-mobile-toggle::after {
+            bottom: 50%;
+            transform: translateY(50%) rotateZ(45deg);
+        }
+    }
+
+    .nav-logo-container {
+        height: 100%;
+        padding: $padding-vertical-small $padding-horizontal-small;
+    }
+    
+    .nav-logo {
+        background-image: url("../assets/images/myUCFmark_studentcenter_horizontal_white.png");
+    }
+
+    .tab-nav-mobile-toggle {
+        position: relative;
+        display: grid;
+        right: $padding-horizontal-small;
+        justify-self: right;
+        width: 1.33rem;
+        height: 1.33rem;
+        align-self: center;
+        border-radius: $border-radius;
+        padding: 0;
+    }
+
+    .tab-nav-mobile-toggle::before,
+    .tab-nav-mobile-toggle::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.15rem;
+        background-color: white;
+        border-radius: 500px;
+    }
+
+    .tab-nav-mobile-toggle::before {
+        top: 25%;
+    }
+
+    .tab-nav-mobile-toggle::after {
+        bottom: 25%;
+    }
+}

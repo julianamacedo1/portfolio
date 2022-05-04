@@ -1,0 +1,16 @@
+.separator {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: $col-gray-25;
+    margin: 0;
+}
+
+.separator.small-gap {
+    margin: $padding-vertical-small 0;
+}
+
+.separator.large-gap {
+    margin: $padding-vertical 0;
+}

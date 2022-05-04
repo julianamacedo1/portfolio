@@ -1,0 +1,119 @@
+.card {
+    position: relative;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    border-radius: $border-radius;
+    width: 100%;
+    height: 100%;
+    background-color: var(--col-background);
+    filter: $drop-shadow;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+}
+
+.card.gray {
+    background-color: $col-gray-125;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    display: grid;
+    width: 100%;
+    padding: $padding-vertical-small $padding-horizontal-small;
+}
+
+.card-header {
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    gap: $padding-vertical-small * 2;
+
+    .heading {
+        font-size: $font-size-text-large;
+        font-weight: 600;
+    }
+}
+
+.card-header:not(.no-right-align) {
+    :last-child:not(:first-child) {
+        justify-self: right;
+    }
+}
+
+.card-header.with-border {
+    border-bottom: 1px solid $col-gray-25;
+}
+
+.card-body {
+    height: 100%;
+    gap: 1rem;
+}
+
+.card-body.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card-body.no-padding-top {
+    padding-top: 0;
+}
+
+.card-body.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+.card.non-collapsible {
+    min-height: 12rem;
+}
+
+.card-footer {
+    gap: 1rem;
+    border-top: 1px solid $col-gray-25;
+    align-self: flex-end;
+    font-size: $font-size-text-small;
+}
+
+.card-footer.content-centered {
+    justify-content: center;
+}
+
+.card-footer.filled {
+    border: none;
+    background-color: $col-gray-125;
+}
+
+@media screen and (max-width: #{$mobile-max-width}) {
+    .card-header.split {
+        grid-template-columns: auto;
+    }
+}
+
+// Dark mode styles ----------------------------------
+
+@mixin card-dark-appearance {
+    .card {
+        filter: none;
+    }
+
+    .card::after {
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        border: 2px solid $col-gray-25;
+        pointer-events: none;
+    }
+}
+
+:root[appearance=dark] {
+    @include card-dark-appearance;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([appearance=light]) {
+        @include card-dark-appearance;
+    }
+}
