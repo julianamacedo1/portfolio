@@ -203,8 +203,8 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 70%;
   }
   .logo-2 {
@@ -212,7 +212,6 @@ a:link {
     float: left;
     padding-left: 20px;
     padding-top: 20px;
-    padding-bottom: 10px;
   }
   .profile-pic {
     width: 60%;
