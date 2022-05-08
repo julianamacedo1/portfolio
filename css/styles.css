@@ -487,18 +487,17 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    width: 50%;
+
+    width: 40%;
   }
   .logo-2 {
-    width: 7%;
+    width: 3%;
     float: left;
     padding-left: 20px;
     padding-top: 20px;
   }
   .profile-pic {
-    width: 30%;
+    width: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;
