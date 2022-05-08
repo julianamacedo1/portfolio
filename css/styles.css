@@ -27,6 +27,7 @@ p {
   font-weight: 400;
   color: #4e6a57;
   line-height: 150%;
+  font-size: 25px;
 }
 a:link {
   text-decoration: none;
@@ -566,11 +567,9 @@ a:link {
   }
   /*page content*/
   .content {
-
     margin: 5%;
   }
   .content-2 {
-
     margin: 3%;
   }
   /*wd grid*/
