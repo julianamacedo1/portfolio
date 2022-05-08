@@ -566,15 +566,12 @@ a:link {
   }
   /*page content*/
   .content {
-    font-size: 25px;
+
     margin: 5%;
   }
   .content-2 {
-    font-size: 25px;
+
     margin: 3%;
-  }
-  .content-3 {
-    font-size: 25px;
   }
   /*wd grid*/
   .grid-container {
