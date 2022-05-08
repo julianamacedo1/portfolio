@@ -631,8 +631,7 @@ a:link {
   .logo-2 {
     width: 3%;
     float: left;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding: 30px;
   }
   .profile-pic {
     width: 10%;
