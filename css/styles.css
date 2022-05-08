@@ -627,12 +627,12 @@ a:link {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
-    padding-top: 50px;
   }
   .logo-2 {
     width: 3%;
     float: left;
-    padding: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
   .profile-pic {
     width: 10%;
