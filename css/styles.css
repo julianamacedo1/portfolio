@@ -624,14 +624,15 @@ a:link {
 @media screen and (min-width: 1500px) {
   .logo-name {
     display: block;
-
+    margin-left: auto;
+    margin-right: auto;
     width: 20%;
-    padding: 30px;
   }
   .logo-2 {
     width: 3%;
     float: left;
-    padding: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
   }
   .profile-pic {
     width: 10%;
