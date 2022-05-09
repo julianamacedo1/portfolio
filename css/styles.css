@@ -548,7 +548,8 @@ a:link {
   .content {
     margin-left: auto;
     margin-right: auto;
-    margin-top: ;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .content-2 {
     margin: 3%;
