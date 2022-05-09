@@ -103,19 +103,6 @@ a:link {
     border-radius: 40px;
     padding: 10px;
   }
-  /*links to work*/
-  .gdlink {
-    color: #7a9c85;
-  }
-  .wdlink {
-    color: #7a9c85;
-  }
-  .gdlink:hover {
-    color: #4e6a57;
-  }
-  .wdlink:hover {
-    color: #4e6a57;
-  }
   /*page content*/
   .content {
     margin: 3%;
