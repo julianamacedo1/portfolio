@@ -68,6 +68,12 @@ a:link {
 .wdlink:hover {
   color: #4e6a57;
 }
+.homepage-links {
+  color: #c08497;
+}
+.homepage-links:hover {
+  color: #c08497;
+}
 
 /*responsive sizing*/
 /*for small screens*/
