@@ -105,17 +105,9 @@ a:link {
   }
   /*links to work*/
   .gdlink {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     color: #7a9c85;
   }
   .wdlink {
-    font-size: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
     color: #7a9c85;
   }
   .gdlink:hover {
