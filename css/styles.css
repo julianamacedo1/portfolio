@@ -44,29 +44,29 @@ a:link {
 }
 .contact-link {
   text-decoration: none;
-  color: #7a9c85;
+  color: #4e6a57;
 }
 .e-link:hover {
-  color: #4e6a57;
+  color: #7a9c85;
 }
 .wd-work:hover {
   color: #7a9c85;
 }
 .contact-link:hover {
-  color: #4e6a57;
+  color: #7a9c85;
 }
 /*links to work*/
 .gdlink {
-  color: #7a9c85;
+  color: #4e6a57;
 }
 .wdlink {
-  color: #7a9c85;
+  color: #4e6a57;
 }
 .gdlink:hover {
-  color: #4e6a57;
+  color: #7a9c85;
 }
 .wdlink:hover {
-  color: #4e6a57;
+  color: #7a9c85;
 }
 .homepage-links {
   color: #c08497;
