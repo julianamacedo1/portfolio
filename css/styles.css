@@ -543,7 +543,10 @@ a:link {
     margin-right: auto;
   }
   .mockup {
-    w2
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
