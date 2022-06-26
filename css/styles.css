@@ -546,7 +546,7 @@ a:link {
   /*text circles*/
   .circle1 {
     height: 325px;
-    width: 325px;
+    width: 100%;
     background-color: #dcbbc5;
     border-radius: 50%;
     outline: #4e6a57 3px solid;
@@ -554,7 +554,7 @@ a:link {
   }
   .circle2 {
     height: 310px;
-    width: 360px;
+    width: 110%;
     background-color: #7a9c85;
     border-radius: 50%;
     margin-top: 90px;
@@ -697,21 +697,21 @@ a:link {
     float: left;
   }
   .profile-pic {
-    width: 80%;
+    width: 90%;
     margin-top: 80px;
   }
   /*text circles*/
   .circle1 {
-    height: 325px;
-    width: 325px;
+    height: 475px;
+    width: 100%;
     background-color: #dcbbc5;
     border-radius: 50%;
     outline: #4e6a57 3px solid;
     outline-offset: -15px;
   }
   .circle2 {
-    height: 310px;
-    width: 360px;
+    height: 460px;
+    width: 110%;
     background-color: #7a9c85;
     border-radius: 50%;
     margin-top: 90px;
@@ -745,11 +745,11 @@ a:link {
     background-color: #dcbbc5;
     padding: 40px;
     margin-bottom: 30px;
-    border-radius: 50px;
+    border-radius: 90px;
   }
   /*work images*/
   .img2 {
-    width: 50%;
+    width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -764,14 +764,14 @@ a:link {
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 10px;
+    padding: 15px;
   }
   .arrow_left {
     width: 10%;
     float: left;
     position: fixed;
     bottom: 0;
-    padding: 10px;
+    padding: 15px;
   }
   /*wd video recordings*/
   .sr-video-ea {
@@ -797,6 +797,13 @@ a:link {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .mockup {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 90px;
   }
 }
 
