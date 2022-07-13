@@ -39,7 +39,7 @@ p {
 a:link {
   text-decoration: none;
 }
-/*email link*/
+/*links*/
 .e-link {
   text-decoration: none;
   color: #4e6a57;
@@ -61,7 +61,6 @@ a:link {
 .contact-link:hover {
   color: #7a9c85;
 }
-/*links to work*/
 .gdlink {
   color: #4e6a57;
 }
@@ -113,56 +112,6 @@ a:link {
   color: #f8f1f3;
   border-radius: 40px;
   padding: 15px;
-}
-/*page content*/
-.content {
-  padding-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-}
-.sub-content {
-  width: 33%;
-  float: left;
-}
-.profile-pic {
-  width: 90%;
-  margin-top: 80px;
-}
-/*text circles*/
-.circle1 {
-  height: 325px;
-  width: 100%;
-  background-color: #dcbbc5;
-  border-radius: 50%;
-  outline: #4e6a57 3px solid;
-  outline-offset: -15px;
-}
-.circle2 {
-  height: 310px;
-  width: 110%;
-  background-color: #7a9c85;
-  border-radius: 50%;
-  margin-top: 90px;
-  outline: #f8f1f3 3px solid;
-  outline-offset: -15px;
-}
-.circle-text1 {
-  text-align: center;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 35%;
-  font-size: 14px;
-}
-.circle-text2 {
-  text-align: center;
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30%;
-  color: #f8f1f3;
-  font-size: 14px;
 }
 /*wd grid*/
 .grid-container {
@@ -233,6 +182,44 @@ a:link {
   margin-left: auto;
   margin-right: auto;
   border-radius: 90px;
+}
+/*home page grid*/
+.home-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+}
+.home-item {
+  text-align: center;
+  padding: 5%;
+}
+.profile-pic {
+  width: 60%;
+}
+/*new circles*/
+.circle-content-1 {
+  background-color: #dcbbc5;
+  border-radius: 50%;
+  outline: #4e6a57 3px solid;
+  outline-offset: -15px;
+  padding: 80px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.circle-content-2 {
+  background-color: #7a9c85;
+  border-radius: 50%;
+  outline: #f8f1f3 3px solid;
+  outline-offset: -15px;
+  padding: 80px;
+  text-align: center;
+  color: #f8f1f3;
+  width: 50%;
+  margin: auto;
 }
 
 /*for small screens*/
